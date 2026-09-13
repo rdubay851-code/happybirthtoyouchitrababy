@@ -1,12 +1,27 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#070711">
 <title>For Chitra — July 3, 2027</title>
 <link rel="stylesheet" href="css/main.css">
 </head>
-<body data-page="gate">
-<canvas id="fx"></canvas><div id="grain"></div><div id="app"></div>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="noise" aria-hidden="true"></div>
+<div id="app">
+  <main class="landing">
+    <div class="eyebrow">A small universe · reserved for Chitra</div>
+    <h1>Chitra<span>.</span></h1>
+    <p class="lead">A birthday world is quietly assembling itself.<br>Ten rooms. Hidden interactions. One date.</p>
+    <div id="countdown" class="countdown" aria-live="polite">
+      <div><b>—</b><small>days</small></div><div><b>—</b><small>hours</small></div><div><b>—</b><small>minutes</small></div><div><b>—</b><small>seconds</small></div>
+    </div>
+    <div class="actions"><a class="button" href="#/garden">Enter the waiting room ↗</a><button class="ghost" id="creatorBtn">Creator preview</button></div>
+    <p class="tiny">Birthday: July 3, 2027 · Creator preview lets you explore everything early.</p>
+  </main>
+</div>
 <script src="js/app.js"></script>
 </body>
 </html>

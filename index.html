@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#070812">
+<meta name="description" content="Chitra — a little universe made from words, stars and memories.">
+<title>CHITRA — The Unfinished Sky</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-mode="aurora">
+<canvas id="sky"></canvas>
+<div class="nebula"></div><div class="grain"></div>
+<div id="app">
+<header class="topbar">
+  <button class="brand" data-route="home"><span class="dot"></span><span>CHITRA</span><small>/ THE UNFINISHED SKY</small></button>
+  <div class="actions"><button class="pill" id="modeCycle">MODE · <b id="modeLabel">AURORA</b></button><button class="pill" id="openMenu">EXPLORE</button></div>
+</header>
+<aside id="drawer" class="drawer" aria-hidden="true">
+  <button id="closeMenu" class="x">×</button>
+  <span class="eyebrow">THE ARCHIVE</span>
+  <h2>Choose a door.</h2>
+  <nav id="nav"></nav>
+  <div class="mode-title">CHANGE THE UNIVERSE</div>
+  <div class="modes">
+    <button data-mode="aurora">✦ Aurora</button>
+    <button data-mode="moon">☾ Moon</button>
+    <button data-mode="rose">♡ Rose</button>
+    <button data-mode="midnight">∞ Midnight</button>
+  </div>
+</aside>
+<main id="main"></main>
+<div id="toast"></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,18 +1,29 @@
-# CHITRA — A Universe Written in Light
+# CHITRA — The Unfinished Sky
 
-GitHub Pages-ready static birthday world.
+GitHub Pages-ready static site.
 
-## Birthday gate
-The public experience opens automatically at **July 3, 2027 00:00 IST**. Before then, the home screen shows a live countdown.
+## Upload
+Put `index.html`, `styles.css`, `app.js`, and `README.md` directly in the repository root.
 
-## Creator Preview
-Before the birthday, click **CREATOR PREVIEW** and enter:
+GitHub Pages:
+Settings → Pages → Deploy from branch → main → / (root)
+
+## Birthday
+The site unlocks automatically at:
+July 3, 2027, 00:00 IST.
+
+Before the birthday, the creator preview can be opened from the home page with:
 `chitra-creator-2027`
 
-Creator mode is stored only in the current browser session. It is intentionally not real security because this is a static GitHub Pages site.
+Creator preview is stored only in the current browser session.
 
-## Deploy
-Upload `index.html`, `styles.css`, `app.js`, and `assets/` directly into the repository root. Do not put them inside another folder. Enable GitHub Pages from the `main` branch and `/ (root)`.
+On/after July 3, 2027:
+- creator preview button disappears
+- all rooms open normally
+- the birthday entrance is shown
+
+## Modes
+Aurora, Moon, Rose and Midnight are persistent and work on every room.
 
 ## Important
-The code uses no backend and no server-side secret. Anyone technically able to inspect source code can see the preview code.
+This is a static site. The creator code is not real security because JavaScript is visible to visitors. Do not put genuinely private information into the source.

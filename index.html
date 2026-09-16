@@ -1,21 +1,37 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#090b18"><meta name="description" content="A tiny universe made for Chitra.">
-<title>CHITRA — A Universe Written in Light</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#070812">
+<meta name="description" content="Chitra — a little universe made from words, stars and memories.">
+<title>CHITRA — The Unfinished Sky</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body data-mode="aurora">
-<canvas id="space"></canvas><div id="aurora"></div><div id="grain"></div>
+<canvas id="sky"></canvas>
+<div class="nebula"></div><div class="grain"></div>
 <div id="app">
 <header class="topbar">
-  <button class="brand" data-go="home"><span class="brand-dot"></span>CHITRA<span class="brand-sub">/ a little universe</span></button>
-  <div class="top-actions"><button id="modeBtn" class="glass">MODE <span id="modeName">AURORA</span></button><button id="menuBtn" class="glass">MENU</button></div>
+  <button class="brand" data-route="home"><span class="dot"></span><span>CHITRA</span><small>/ THE UNFINISHED SKY</small></button>
+  <div class="actions"><button class="pill" id="modeCycle">MODE · <b id="modeLabel">AURORA</b></button><button class="pill" id="openMenu">EXPLORE</button></div>
 </header>
-<aside id="menu" class="drawer" aria-hidden="true"><button class="drawer-close" id="closeMenu">×</button><p class="eyebrow">THE CHITRA ARCHIVE</p><h2>Choose a door.</h2><nav id="nav"></nav><div class="mode-grid"><button data-mode-choice="aurora">Aurora</button><button data-mode-choice="moon">Moon</button><button data-mode-choice="rose">Rose</button><button data-mode-choice="midnight">Midnight</button></div></aside>
+<aside id="drawer" class="drawer" aria-hidden="true">
+  <button id="closeMenu" class="x">×</button>
+  <span class="eyebrow">THE ARCHIVE</span>
+  <h2>Choose a door.</h2>
+  <nav id="nav"></nav>
+  <div class="mode-title">CHANGE THE UNIVERSE</div>
+  <div class="modes">
+    <button data-mode="aurora">✦ Aurora</button>
+    <button data-mode="moon">☾ Moon</button>
+    <button data-mode="rose">♡ Rose</button>
+    <button data-mode="midnight">∞ Midnight</button>
+  </div>
+</aside>
 <main id="main"></main>
-<div id="toast" role="status"></div>
+<div id="toast"></div>
 </div>
 <script src="app.js"></script>
-</body></html>
+</body>
+</html>

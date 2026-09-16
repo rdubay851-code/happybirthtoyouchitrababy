@@ -1,27 +1,21 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#070711">
-<title>For Chitra — July 3, 2027</title>
-<link rel="stylesheet" href="css/main.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090b18"><meta name="description" content="A tiny universe made for Chitra.">
+<title>CHITRA — A Universe Written in Light</title>
+<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<canvas id="fx" aria-hidden="true"></canvas>
-<div class="noise" aria-hidden="true"></div>
+<body data-mode="aurora">
+<canvas id="space"></canvas><div id="aurora"></div><div id="grain"></div>
 <div id="app">
-  <main class="landing">
-    <div class="eyebrow">A small universe · reserved for Chitra</div>
-    <h1>Chitra<span>.</span></h1>
-    <p class="lead">A birthday world is quietly assembling itself.<br>Ten rooms. Hidden interactions. One date.</p>
-    <div id="countdown" class="countdown" aria-live="polite">
-      <div><b>—</b><small>days</small></div><div><b>—</b><small>hours</small></div><div><b>—</b><small>minutes</small></div><div><b>—</b><small>seconds</small></div>
-    </div>
-    <div class="actions"><a class="button" href="#/garden">Enter the waiting room ↗</a><button class="ghost" id="creatorBtn">Creator preview</button></div>
-    <p class="tiny">Birthday: July 3, 2027 · Creator preview lets you explore everything early.</p>
-  </main>
+<header class="topbar">
+  <button class="brand" data-go="home"><span class="brand-dot"></span>CHITRA<span class="brand-sub">/ a little universe</span></button>
+  <div class="top-actions"><button id="modeBtn" class="glass">MODE <span id="modeName">AURORA</span></button><button id="menuBtn" class="glass">MENU</button></div>
+</header>
+<aside id="menu" class="drawer" aria-hidden="true"><button class="drawer-close" id="closeMenu">×</button><p class="eyebrow">THE CHITRA ARCHIVE</p><h2>Choose a door.</h2><nav id="nav"></nav><div class="mode-grid"><button data-mode-choice="aurora">Aurora</button><button data-mode-choice="moon">Moon</button><button data-mode-choice="rose">Rose</button><button data-mode-choice="midnight">Midnight</button></div></aside>
+<main id="main"></main>
+<div id="toast" role="status"></div>
 </div>
-<script src="js/app.js"></script>
-</body>
-</html>
+<script src="app.js"></script>
+</body></html>
